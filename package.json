@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "git://github.com/grundera/grunt-cp-l10n.git"
     },
     "bugs": {
         "url": ""
