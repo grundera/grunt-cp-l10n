@@ -1,4 +1,6 @@
+# comment
 first=First
 admin.ui {
   second=Second
+  # comment 2
 }

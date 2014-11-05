@@ -5,6 +5,7 @@
 If you have a lot of localization messages with long prefixes like this:
 
 ```
+# Preferences -- comment
 admin.ui.prefs.form.title=Preferences
 admin.ui.prefs.form.name=Name
 admin.ui.prefs.form.address.street=Street
@@ -15,6 +16,7 @@ admin.ui.prefs.form.submit=Save
 you can use this plugin and write:
 
 ```
+# Preferences -- comment
 admin.ui.prefs.form {
     title=Preferences
     name=Name
@@ -61,5 +63,8 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+###0.1.1
+Added parsing of comments.
+
 ###0.1.0
-first release
+First release.

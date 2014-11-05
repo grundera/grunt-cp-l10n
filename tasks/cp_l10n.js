@@ -35,7 +35,9 @@ module.exports = function (grunt) {
             var lines = src.split(grunt.util.normalizelf('\n'));
             var prefixes = [];
             lines.forEach(function (line) {
-                if (line.match(/\.?\s*\{\s*$/)) {
+                if (line.match(/^\s*#/)) {
+                    output.push(line.trim());
+                } else if (line.match(/\.?\s*\{\s*$/)) {
                     prefixes.push(line.replace(/\.?\s*\{\s*$/, '').trim() + '.');
                 } else if (line.match(/^\s*\}\s*$/)) {
                     prefixes.pop();
